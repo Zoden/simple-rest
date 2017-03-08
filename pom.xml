@@ -46,10 +46,10 @@
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>0.4.13</version>
                 <configuration>
-                    <!--<dockerHost>${env.DOCKER_HOST}</dockerHost>-->
-                    <!--<dockerCertPath>${env.DOCKER_CERT_PATH}</dockerCertPath>-->
-                    <dockerHost>https://192.168.99.100:2376</dockerHost>
-                    <dockerCertPath>c:\Users\zolda\.docker\machine\machines\default\</dockerCertPath>
+                    <dockerHost>${env.DOCKER_HOST}</dockerHost>
+                    <dockerCertPath>${env.DOCKER_CERT_PATH}</dockerCertPath>
+                    <!--<dockerHost>https://192.168.99.100:2376</dockerHost>-->
+                    <!--<dockerCertPath>c:\Users\zolda\.docker\machine\machines\default\</dockerCertPath>-->
                     <imageName>simple-rest</imageName>
                     <maintainer>zolda</maintainer>
                     <baseImage>anapsix/alpine-java:8_server-jre</baseImage>
